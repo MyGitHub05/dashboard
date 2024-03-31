@@ -2,15 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 body {
   display: grid;
   grid-template-columns: 300px 1fr;
 }
+
+/* dashboard part of website */
 .dashboard {
   height: 100vh;
-  background-color: #f0f9ff;
+  background-color: #fde047;
 }
+
+/* logo in the dashboard */
 .dashboard_logo {
   height: 80px;
   display: flex;
@@ -27,6 +32,7 @@ body {
   margin-right: 10px;
 }
 
+/* navigation home to privacy */
 .first_nav {
   height: 250px;
   margin-bottom: 50px;
@@ -53,8 +59,146 @@ body {
   height: 120px;
 }
 
+/* Main part of website */
 main {
   border: 1px solid blue;
   height: 100vh;
-  background-color: #2563eb;
+  background-color: #e2e8f0;
+}
+
+/* header inside main */
+.header_main {
+  border: none;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  height: 160px;
+  padding-left: 20px;
+}
+
+/* search part top area in header */
+.search_div {
+  padding-top: 20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.searchbar_div {
+  flex-grow: 1;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.search_btn {
+  height: 30px;
+  width: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+.search_btn img {
+  height: 15px;
+}
+.searchbar {
+  flex-grow: 1;
+  background-color: #e2e8f0;
+  height: 30px;
+  width: 500px;
+  border: none;
+  border-radius: 40px;
+}
+
+/* right side top area of header where profile notification bell and the name of user */
+.profile_notif_div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 350px;
+  height: 50px;
+  padding-left: 40px;
+}
+
+.notification_bell_btn {
+  height: 20px;
+  width: 20px;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: white;
+}
+
+.notification_bell_btn img {
+  height: auto;
+  width: 100%;
+}
+
+.profile_pic {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.profile_pic img,
+.profile_picture img {
+  height: auto;
+  width: 100%;
+}
+
+.users_name {
+  width: 150px;
+  font-size: 13px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+/* bottom part of header */
+.users_control_div {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.profile_picture {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* user name and greetings part */
+.users_name_div {
+  margin-left: 10px;
+  height: 70px;
+  width: 500px;
+  padding-top: 10px;
+}
+.users_name_div p {
+  font-size: 15px;
+}
+
+.users_name_div .username {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+/* right side, bottom part of header 3 buttons have */
+.buttons {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  width: 350px;
+  margin-left: 200px;
+}
+
+.buttons button {
+  height: 30px;
+  width: 90px;
+  border-radius: 20px;
+  margin-left: 20px;
+  border: none;
+  font-size: 11px;
+  font-weight: bolder;
+  background-color: #fde047;
 }

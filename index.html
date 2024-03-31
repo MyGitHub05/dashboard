@@ -7,6 +7,7 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- dashboard on leftside -->
     <header class="dashboard">
       <div class="dashboard_logo">
         <img src="img/drlogo-removebg-preview.png" alt="dragon_logo" />Dashboard
@@ -30,7 +31,56 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+
+    <!-- Main   -->
+    <main>
+      <!-- header in main -->
+      <header class="header_main">
+        <div class="search_div">
+          <div class="searchbar_div">
+            <button class="search_btn">
+              <img src="img/magnify.svg" alt="seatch_logo" />
+            </button>
+            <input
+              class="searchbar"
+              type="search"
+              name="search_bar"
+              id="search_bar"
+            />
+          </div>
+          <div class="profile_notif_div">
+            <button class="notification_bell_btn">
+              <img src="img/bell-ring.svg" alt="notification_bell" />
+            </button>
+            <div class="profile_pic">
+              <img
+                src="img/profilepic-removebg-preview.png"
+                alt="profile picture"
+              />
+            </div>
+            <h2 class="users_name">Users name</h2>
+          </div>
+        </div>
+        <div class="users_control_div">
+          <div class="profile_picture">
+            <img
+              src="img/profilepic-removebg-preview.png"
+              alt="profile picture"
+            />
+          </div>
+          <div class="users_name_div">
+            <p>Hi there,</p>
+            <p class="username">User name (@username)</p>
+          </div>
+          <div class="buttons">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
+        </div>
+      </header>
+      <div></div>
+    </main>
     <script type="module" src="index.js"></script>
   </body>
 </html>
