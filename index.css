@@ -6,7 +6,7 @@
 }
 body {
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 250px 1fr;
 }
 
 /* dashboard part of website */
@@ -20,14 +20,18 @@ body {
   height: 80px;
   display: flex;
   align-items: center;
-  font-size: 30px;
+  font-size: 20px;
   color: #172554;
   font-weight: bolder;
   margin-bottom: 20px;
   cursor: pointer;
 }
+
+.dashboard_logo:hover {
+  background-color: #f5cf11;
+}
 .dashboard_logo img {
-  height: 70px;
+  height: 50px;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -39,7 +43,7 @@ body {
 }
 .first_nav ul li,
 .second_nav ul li {
-  height: 25px;
+  height: 30px;
   padding: 5px;
   color: #172554;
   font-size: 15px;
@@ -48,6 +52,11 @@ body {
   align-items: center;
   cursor: pointer;
   font-weight: bolder;
+  border-radius: 10px;
+}
+.first_nav ul li:hover,
+.second_nav ul li:hover {
+  background-color: #f5cf11;
 }
 .first_nav ul li img,
 .second_nav ul li img {
@@ -61,7 +70,6 @@ body {
 
 /* Main part of website */
 main {
-  border: 1px solid blue;
   height: 100vh;
   background-color: #e2e8f0;
 }
@@ -71,7 +79,7 @@ main {
   border: none;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
   background-color: white;
-  height: 160px;
+  height: 150px;
   padding-left: 20px;
 }
 
@@ -101,12 +109,14 @@ main {
   height: 15px;
 }
 .searchbar {
-  flex-grow: 1;
+  flex: 1;
+  padding: 0px 20px 0px 20px;
   background-color: #e2e8f0;
   height: 30px;
   width: 500px;
   border: none;
   border-radius: 40px;
+  outline: none;
 }
 
 /* right side top area of header where profile notification bell and the name of user */
@@ -201,4 +211,167 @@ main {
   font-size: 11px;
   font-weight: bolder;
   background-color: #fde047;
+  cursor: pointer;
+}
+.buttons button:hover {
+  background-color: #f5cf11;
+}
+
+/* main content of the page */
+.main_div {
+  display: grid;
+  grid-template-columns: 800px 300px;
+  gap: 30px;
+  padding: 20px;
+  height: 568px;
+}
+
+/* project part */
+.project p {
+  font-size: 15px;
+  font-weight: bolder;
+  height: 30px;
+}
+.project_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 370px);
+  gap: 20px;
+  height: 516px;
+  overflow: scroll;
+}
+
+.project_box {
+  height: 200px;
+  border-radius: 10px;
+  background-color: #d97706;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.project_box div {
+  height: 200px;
+  background-color: white;
+  border-radius: 0 10px 10px 0px;
+  position: relative;
+}
+
+.project_box .control_btn {
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
+.control_btn button {
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border: none;
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 5px;
+  transition: ease-in-out;
+}
+.control_btn button:hover {
+  background-color: #e2e8f0;
+}
+
+.project_box h2,
+p {
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.project_box p {
+  font-size: 13px;
+}
+
+/* right side of the project area */
+aside {
+  overflow: scroll;
+}
+
+/* announcement area */
+.announcements_div {
+  height: 330px;
+  padding: 10px;
+}
+
+.announcement_adds {
+  margin-top: 7px;
+  height: 260px;
+  width: 250px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.announcement {
+  border-bottom: 1px solid rgb(213, 213, 216);
+  padding-bottom: 10px;
+  padding-right: 5px;
+  border-radius: 5px;
+}
+
+.announcement:hover {
+  background-color: #7db6ff;
+}
+
+.announcement p {
+  font-size: 8px;
+}
+
+.announcements_div .announcement_adds .title_of_announcement {
+  font-size: 10px;
+}
+
+.announcement3 {
+  border: none;
+}
+
+/* trending area */
+.trending_div {
+  height: 290px;
+  padding: 10px;
+}
+
+.trending_div p {
+  margin-bottom: 10px;
+}
+
+.trending {
+  background-color: white;
+  height: 235px;
+  width: 250px;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+}
+.inside_topic {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  align-items: center;
+  border-radius: 5px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+.inside_topic:hover {
+  background-color: #7db6ff;
+}
+
+.topic img {
+  height: 30px;
+}
+
+.topic .topic_username {
+  font-size: 13px;
+}
+.topic p {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
 }
